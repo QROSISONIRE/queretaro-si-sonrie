@@ -1,8 +1,10 @@
 export default function Home() {
 
   return (
-    <>
-    Inicio
-    </>
+    
+    <div className="h-[100rem] bg-red-50">
+      Inicio
+    </div>
+    
   );
 }
