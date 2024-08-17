@@ -2,7 +2,7 @@ const Volunteering = () => {
     return (
         <main>
             <div className="">
-                <h1>Pagina de voluntariadoooo</h1>
+                <h1>Pagina de voluntarios</h1>
             </div>
         </main>
     );
