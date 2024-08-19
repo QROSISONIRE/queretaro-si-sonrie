@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { navbar } from '../constants'
+import { navbar } from '../../constants'
 
 const Navbar = () => {
   return (
@@ -10,7 +10,7 @@ const Navbar = () => {
       </Link>
       <nav className='flex gap-20'>
         {navbar.map((link) => (
-          <Link href={link.href} className='hover:bg-black bg-opacity-10 rounded-md px-5 p-2'>
+          <Link href={link.href} className='hover:bg-black bg-opacity-10 rounded-md px-5 p-2' key={link.href}>
             {link.name}
           </Link>
         ))}

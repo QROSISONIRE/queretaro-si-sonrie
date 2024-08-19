@@ -12,3 +12,4 @@ export const navbar = [
     href: '/volunteering'
   }
 ]
+
