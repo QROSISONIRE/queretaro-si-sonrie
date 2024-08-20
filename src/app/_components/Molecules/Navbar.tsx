@@ -43,7 +43,7 @@ const Navbar = () => {
         ))}
       </div>
       {/* Página de donación */}
-      <Link className='w-32 drop-shadow-md bg-third rounded-full text-center hover:bg-[rgb(255,40,40)] py-1' href={'/donar'}>
+      <Link className='w-32 drop-shadow-md bg-third rounded-full text-center hover:bg-[rgb(255,40,40)] py-1' href={'/donations-page'}>
         Donar
       </Link>
     </motion.nav>

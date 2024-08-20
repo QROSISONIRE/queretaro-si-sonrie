@@ -5,10 +5,10 @@ export const navbar = [
   },
   {
     name: 'Contacto',
-    href: '/contacto'
+    href: '/contact-page'
   },
   {
     name: 'Voluntariado',
     href: '/volunteering'
-  }
+  },
 ]
