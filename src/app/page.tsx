@@ -35,7 +35,7 @@ export default function Home() {
         <div className="flex h-screen">
           <Decorations color1='third' color2='fourth' className='top-[37rem] -ml-[30rem] -z-20'/>
           <h1 className="text-4xl font-bold ml-96 -mt-80">
-            El Instituto Queretano para la Atención de Enfermedades Congénitas (IQUEC)
+            El Instituto Queretano para la Atención de Enfermedades Congénitas (IQUEC) 
           </h1>
         </div>
       </section>
