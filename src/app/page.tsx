@@ -30,10 +30,11 @@ export default function Home() {
         <hr className="w-11/12 mt-5 border-2 border-black"/>
       </div>
   {/* Servicios */}
-      <div className="h-screen p-10">
-        <Decorations color1='fifth' color2='third' className='top-[50rem] -ml-[20rem] -z-20' rotation="-45" />
+      <section className="h-screen p-10 w-full">
+        <h1 className="text-6xl poppins text-center mb-20">Servicios</h1>
+        {/* <Decorations color1='fifth' color2='third' className='top-[50rem] -ml-[20rem] -z-20' rotation="-45" /> */}
         <Icon/>
-      </div>
+      </section>
     </main>
   );
 }
