@@ -35,7 +35,7 @@ export const Decorations: FC<DecorationProps> = ({color1, color2, rotation, colo
 
 export const Icon = () => {
   return (
-    <div className='w-32 h-32 bg-third rounded-full border-dashed border-black border-4'>
+    <div className='w-32 h-32 rounded-full border-dashed border-black border-4'>
       <img/>
     </div>
   )
