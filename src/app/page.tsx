@@ -5,7 +5,7 @@ import { Decorations, Icon } from "./_components/Atoms/Decorations";
 export default function Home() {
 
   return (
-    <main className="relative min-h-screen items-center justify-center">
+    <main className="relative min-h-screen items-center justify-center md:overflow-x-hidden">
       {/* Inicio */}
       <section className="grid md:grid-cols-2 md:text-left min-h-screen flex-col items-start justify-start"> 
         <div className="md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start">
@@ -30,11 +30,12 @@ export default function Home() {
                   className="w-8 h-8"
                 />
               </Link>
+              <Decorations color1='fifth' color2='third' className='absolute top-[23rem] left-[65rem] -z-20'/>
               </div>
           </div>
-        <div className="flex h-screen">
+        <div className="md:flex md:shrink-0 flex flex-col items-start justify-start">
           <Decorations color1='third' color2='fourth' className='top-[37rem] -ml-[30rem] -z-20'/>
-          <h1 className="text-4xl font-bold ml-96 -mt-80">
+          <h1 className="text-4xl font-bold ml-5 md:ml-96 -mt-[23%] w-[100%] overflow-wrap: break-word">
             El Instituto Queretano para la Atención de Enfermedades Congénitas (IQUEC) 
           </h1>
         </div>
@@ -44,9 +45,21 @@ export default function Home() {
       <section className="grid md:grid-cols-2 md:text-left min-h-screen flex-col items-start justify-start"> 
         <div className="md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start">
             <img 
-              src="/images/elipse.png" alt="imagen" 
-              />
-          </div>
+              src="/images/elipse1.png" alt="imagen" className="w-[95%] top-[2%]"
+            />
+            <Decorations color1='third' color2='fourth' className='top-[42%] ml-[70%] -z-20'/>
+         </div>
+         <div className="md:flex md:shrink-0 flex flex-col items-start justify-start">
+          <h1 className="text-4xl font-bold ml-5 md:ml-[30%] -mt-[3%] w-[100%]">
+            Conócenos...
+          </h1>
+          <p className="text-2xl ml-5 md:ml-[15%] mt-[5%] w-[75%] overflow-wrap: break-word text-justify"> 
+            Nuestra misión es atender a todos los pacientes con fisura labio palatina que se encuentren radicando 
+            en la ciudad de Querétaro, teniendo acceso a un tratamiento multidisciplinario de alta calidad, llevado 
+            a cabo por especialistas calificados en el protocolo de atención. Para ello, todo nuestro personal médico 
+            y dental es voluntario en el proyecto, donando sus honorarios médicos.
+          </p>
+         </div>
       </section>
 
       {/* Organigrama */}
