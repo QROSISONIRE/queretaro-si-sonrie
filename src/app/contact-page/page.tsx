@@ -1,5 +1,6 @@
 import Image from 'next/image';
-import { api, HydrateClient } from "~/trpc/server";
+import { HydrateClient } from "~/trpc/server";
+import Map from '../_components/atoms/map'
 
 export default function ContactPage() {
   return (
@@ -52,6 +53,7 @@ export default function ContactPage() {
                 backgroundColor: '#f0f0f0', 
             }}>
                 <h2 style={{ fontSize: '2em' }}>Mapa</h2>
+                <Map />
             </div>
             <div style={{
                 flex: 1,
