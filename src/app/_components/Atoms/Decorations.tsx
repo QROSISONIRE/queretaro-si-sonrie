@@ -18,14 +18,14 @@ export const Decorations: FC<DecorationProps> = ({color1, color2, rotation, colo
   return (
     <div className={`absolute -z-10 ${rotation? parseInt(rotation) < 0 ? '-rotate-45': 'rotate-45'
     : null} ${className}` }>
-      <div className={`w-[45rem] h-14 rounded-full drop-shadow-lg ${color1 === 'fourth' ? 
+      <div className={`w-[45rem] h-16 rounded-full ${color1 === 'fourth' ? 
         'bg-fourth' 
         : color1 === 'fifth' ? 'bg-fifth' : 'bg-third'}`} />
-      <div className={`w-[45rem] h-14 rounded-full relative left-20 -top-3 drop-shadow-lg ${color2 === 'fourth' ? 
+      <div className={`w-[45rem] h-16 rounded-full relative left-20 -top-3 ${color2 === 'fourth' ? 
         'bg-fourth' 
         : color2 === 'fifth' ? 'bg-fifth' : 'bg-third'}`} />   
       {color3 ? 
-        <div className={`w-[45rem] h-14 rounded-full relative -left-20 -top-3 drop-shadow-lg ${color3 === 'fourth' ? 
+        <div className={`w-[45rem] h-16 rounded-full relative -left-20 -top-3 ${color3 === 'fourth' ? 
         'bg-fourth' 
         : color3 === 'fifth' ? 'bg-fifth' : 'bg-third'}`} />  :null  
       }
