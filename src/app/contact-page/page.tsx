@@ -1,68 +1,41 @@
 import Image from 'next/image';
 import { HydrateClient } from "~/trpc/server";
-import Map from '../_components/atoms/map'
+import Map from '../_components/atoms/map';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({
+  subsets: ['latin'],
+  weight: ['400', '700'], // 400 es regular y 700 es bold
+  style: 'normal',
+});
 
 export default function ContactPage() {
   return (
     <HydrateClient>
-        <div style={{ width: '100%', height: 'auto', position: 'relative' }}>
+        <div className={`relative w-full h-auto ${inter.className}`}>
             <Image
                 src="/banner.jpg"
                 alt="Banner"
                 layout="responsive"
                 width={1554}
                 height={661} 
-                style={{ objectFit: 'cover' }}
+                className="object-cover"
             />
-            <div style={{
-              position: 'absolute',
-              top: '87%',  
-              left: '50%',
-              transform: 'translate(-50%, -50%)', 
-              width: '50%',
-              height: '50%', 
-              background: 'rgba(255, 255, 255, 0.3)',
-              borderRadius: '20px',
-              backdropFilter: 'blur(10px)',
-              WebkitBackdropFilter: 'blur(10px)',
-              border: '1px solid rgba(255, 255, 255, 0.18)',
-              boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
-              padding: '20px',  
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-              justifyContent: 'center',
-              textAlign: 'center',
-              color: '#000',  
-            }}>
-                <h1 style={{ fontSize: '4em', marginBottom: '10px' }}>¡Comunícate!</h1>
-                <p style={{ fontSize: '1em', lineHeight: '1.5' }}>Escríbenos un mensaje o llámanos para resolver cualquier duda que tengas.</p>
+            {/* Adjusted width, height, top, and transform for smaller size */}
+            <div className="absolute top-[90%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[40%] h-[40%] bg-white bg-opacity-30 rounded-2xl backdrop-blur-lg border border-white/20 shadow-lg p-5 flex flex-col items-center justify-center text-center text-black">
+                <h1 className="text-3xl sm:text-5xl mb-3 font-bold">¡Comunícate!</h1>
+                <p className="text-base sm:text-lg leading-relaxed font-regular">Escríbenos un mensaje o llámanos para resolver cualquier duda que tengas.</p>
             </div>
         </div>
 
-        <section style={{
-            display: 'flex',
-            width: '100%',
-            height: '500px',
-        }}>
-            <div style={{
-                flex: 1,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                backgroundColor: '#f0f0f0', 
-            }}>
-                <h2 style={{ fontSize: '2em' }}>Mapa</h2>
-                <Map />
+        <section className="flex w-full h-[500px] pt-12">
+            <div className="flex-1 flex items-center justify-center p-5">
+                <div className="w-full h-full max-w-[90%] max-h-[80%]">
+                    <Map />
+                </div>
             </div>
-            <div style={{
-                flex: 1,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                backgroundColor: '#e0e0e0',  
-            }}>
-                <h2 style={{ fontSize: '2em' }}>Forms</h2>
+            <div className="flex-1 flex items-center justify-center">
+                <h2 className="text-2xl font-bold">Forms</h2>
             </div>
         </section>
     </HydrateClient>
