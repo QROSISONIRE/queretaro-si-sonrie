@@ -17,7 +17,7 @@ export default function ContactPage() {
               position: 'absolute',
               top: '87%',  
               left: '50%',
-              transform: 'translate(-52%, -30%)', 
+              transform: 'translate(-50%, -50%)', 
               width: '50%',
               height: '50%', 
               background: 'rgba(255, 255, 255, 0.3)',
@@ -42,8 +42,7 @@ export default function ContactPage() {
         <section style={{
             display: 'flex',
             width: '100%',
-            height: '500px',  // Puedes ajustar la altura según lo necesites
-            marginTop: '20px',
+            height: '500px',
         }}>
             <div style={{
                 flex: 1,
@@ -51,7 +50,6 @@ export default function ContactPage() {
                 alignItems: 'center',
                 justifyContent: 'center',
                 backgroundColor: '#f0f0f0', 
-
             }}>
                 <h2 style={{ fontSize: '2em' }}>Mapa</h2>
             </div>
