@@ -6,15 +6,15 @@ import Link from "next/link";
 export default function Home() {
 
   return (
-    <main className="relative min-h-screen items-center justify-center md:overflow-x-hidden">
+    <main className="h-screen">
       {/* Inicio */}
-      <section className="grid md:grid-cols-2 md:text-left min-h-screen flex-col items-start justify-start"> 
+      <section className="grid md:grid-cols-2 md:text-left h-screen flex-col items-start justify-start "> 
         <div className="md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start">
           <img 
             src="/images/Collage.png" alt="imagen" 
             />
         </div>
-          <div className="md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start p-10 mt-20">
+          <div className="md:flex md:shrink-0 flex flex-col items-start justify-start p-10 mt-20 ">
             <img
               src="/images/mainTitle.png"
               />
@@ -34,21 +34,23 @@ export default function Home() {
               <Decorations color1='fifth' color2='third' className='absolute top-[23rem] left-[65rem] -z-20'/>
               </div>
           </div>
-        <div className="md:flex md:shrink-0 flex flex-col items-start justify-start">
-          <Decorations color1='third' color2='fourth' className='top-[37rem] -ml-[30rem] -z-20'/>
-          <h1 className="text-4xl font-bold ml-5 md:ml-96 -mt-[23%] w-[100%] overflow-wrap: break-word">
+        </section>
+        
+        <div className="md:shrink-0 flex mb-32">
+          <Decorations color1='third' color2='fourth' className='relative right-[30rem] -z-20 -top-5 h-fit'/>
+          <h1 className="text-4xl font-bold md:-ml-96  w-[50rem] block ">
             El Instituto Queretano para la Atención de Enfermedades Congénitas (IQUEC) 
           </h1>
         </div>
-      </section>
+      
 
       {/* Misión / Visión */}
       <section className="grid md:grid-cols-2 md:text-left min-h-screen flex-col items-start justify-start"> 
-        <div className="md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start">
+        <div className="md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start ">
             <img 
               src="/images/elipse1.png" alt="imagen" className="w-[95%] top-[2%]"
             />
-            <Decorations color1='third' color2='fourth' className='top-[42%] ml-[70%] -z-20'/>
+            <Decorations color1='third' color2='fourth' className='relative left-[65rem] -z-20 '/>
          </div>
          <div className="md:flex md:shrink-0 flex flex-col items-start justify-start">
           <h1 className="text-4xl font-bold ml-5 md:ml-[30%] -mt-[3%] w-[100%]">
@@ -70,31 +72,32 @@ export default function Home() {
         </div>
         <hr className="w-11/12 mt-5 border-2 border-black"/>
       </div>
-  {/* Servicios */}
+    {/* Servicios */}
         {/* <Decorations color1='fifth' color2='third' className='top-[50rem] -ml-[20rem] -z-20' rotation="-45" /> */}
       <section className="h-screen p-10 w-full">
         <h1 className="text-6xl poppins text-center mb-10">Servicios</h1>
 
-      <section className="h-screen">
-        
-          <Decorations color1={"fourth"} color2={""} color3="fifth" className={"-rotate-45 top-[360vh] -right-24"}/>
-          <Decorations color1={"third"} color2={"fourth"} color3="fifth" className={"-rotate-45 top-[320vh] -left-36"}/>
-          {/* <Decorations color1={"third"} color2={"fourth"} color3="fifth" className={"top-[400vh] right-[30rem] -rotate-45 border-2 border-red-600 w-32"}/> */}
-        <section className="h-screen flex flex-col gap-10 flex-wrap items-center">
-            {servicios.map((servicio, i) => (
-              <div key={i}>
-                <div className="flex items-center gap-5">
-                  <Icon/>
-                  <span>
-                    <h2 className="poppins">{servicio.titulo}</h2>
-                    <span className="inter block w-96">{servicio.descripción}</span>
-                  </span>
+        <section className="h-screen">
+          
+            <Decorations color1={"fourth"} color2={""} color3="fifth" className={"-rotate-45 top-[360vh] -right-24"}/>
+            <Decorations color1={"third"} color2={"fourth"} color3="fifth" className={"-rotate-45 top-[320vh] -left-36"}/>
+            {/* <Decorations color1={"third"} color2={"fourth"} color3="fifth" className={"top-[400vh] right-[30rem] -rotate-45 border-2 border-red-600 w-32"}/> */}
+          <section className="h-screen flex flex-col gap-10 flex-wrap items-center">
+              {servicios.map((servicio, i) => (
+                <div key={i}>
+                  <div className="flex items-center gap-5">
+                    <Icon/>
+                    <span>
+                      <h2 className="poppins">{servicio.titulo}</h2>
+                      <span className="inter block w-96">{servicio.descripción}</span>
+                    </span>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
+              </section>
             </section>
-          </section>
-      </section>
+        </section>
+
     </main>
   );
 }
