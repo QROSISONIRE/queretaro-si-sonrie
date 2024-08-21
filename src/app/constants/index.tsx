@@ -44,4 +44,14 @@ export const servicios = [
     descripción: 'Queilo, palato, velo, nasorino',
     //img
   },
+  {
+    titulo: 'Maxilofacial',
+    descripción: 'Terceros molares, cirugía ortognática',
+    //img
+  },
+  {
+    titulo: 'Preventiva',
+    descripción: 'Actividades preventivas, caries, control de higiene',
+    //img
+  },
 ]
