@@ -13,7 +13,7 @@ const inter = Inter({
 export default function ContactPage() {
   return (
     <HydrateClient>
-      <div className={`relative h-auto w-full ${inter.className}`}>
+      <div className={` h-auto w-full ${inter.className}`}>
         <Image
           src="/banner.jpg"
           alt="Banner"
@@ -23,13 +23,14 @@ export default function ContactPage() {
           className="object-cover"
         />
         {/* Adjusted width, height, top, and transform for smaller size */}
-        <div className="absolute left-1/2 top-[90%] flex h-[40%] w-[40%] -translate-x-1/2 -translate-y-1/2 transform flex-col items-center justify-center rounded-2xl border border-white/20 bg-white bg-opacity-30 p-5 text-center text-black shadow-lg backdrop-blur-lg">
+        <div className="absolute left-1/2 top-[80%] flex h-[40%] w-[40%] -translate-x-1/2 -translate-y-1/2 transform flex-col items-center justify-center rounded-2xl border border-white/20 bg-white bg-opacity-30 p-5 text-center text-black shadow-lg backdrop-blur-lg">
           <h1 className="mb-3 text-3xl font-bold sm:text-5xl">¡Comunícate!</h1>
           <p className="font-regular text-base leading-relaxed sm:text-lg">
             Escríbenos un mensaje o llámanos para resolver cualquier duda que
             tengas.
           </p>
         </div>
+        
       </div>
 
       <section className="flex h-[500px] w-full pt-12">
@@ -44,6 +45,7 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+      
     </HydrateClient>
   );
 }
