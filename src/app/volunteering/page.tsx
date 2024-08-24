@@ -4,23 +4,18 @@ const CorpusVolunteering = () => {
     return (
     <div className="flex flex-col min-h-screen">
 
-          {/* Navbar */}
-        <div className='bg-blue-500 p-4 text-white'>
-            <h1 className="text-2xl">Navbar</h1>
-        </div>
-
           {/* Body */}
-        <div className="bg-blue-100 p-4">
+        <div className="pt-20">
 
               {/* Sección de imagen y texto */}
-            <div className='flex flex-row text-white'>
-                <div className='bg-blue-400 p-4 w-1/2 flex items-center justify-center'> 
-                    <img src='https://via.placeholder.com/300' alt='Imagen de la actividad'/>
+            <div className='py-16 flex flex-row'>
+                <div className='w-1/2 flex items-center justify-center'> 
+                    <img src='images/Voluntariado3.jpeg' className='w-80 h-auto rounded-3xl' alt='Imagen de la actividad'/>
                 </div>
 
-                <div className='bg-blue-600 w-1/2 '>
-                    <div className='bg-blue-800 p-8 text-white'>
-                        <div className='text-3xl'> <h1> Servicio Social </h1> </div>
+                <div className=' w-1/2 '>
+                    <div className='p-8'>
+                        <div> <h1 className="text-5xl font-bold"> Servicio Social </h1> </div>
                     </div>
 
                     <div className='flex flex-col p-4 justify-center items-center'>
@@ -34,27 +29,28 @@ const CorpusVolunteering = () => {
             </div>
 
               {/* Sección de dos bloques */}
-            <div className='flex flex-row bg-blue-300 text-white'>
+            <div className='flex flex-row text-white'>
 
-                <div className='p-8 w-1/2'>
-                    <div className='bg-blue-600 p-8'>
-                        <h3 className="text-lg font-bold">Actividades</h3>
-                        <ul className="list-disc pl-5">
-                        <li>Requisito 1</li>
-                        <li>Requisito 2</li>
-                        <li>Requisito 3</li>
+                <div className='p-8 w-1/2 '>
+                    <div className='bg-secondary p-2 rounded-3xl'>
+                        <h3 className="p-8 text-2xl font-bold">¿Qué actividades voy a realizar?</h3>
+                        <ul className="list-disc pl-12 pb-8">
+                        <li>Conocer el protocolo de atención multidisciplinario de fisura labio palatina.</li>
+                        <li>Asistentes quirúrguicas en el área de quirófano.</li>
+                        <li>Asistente en el área de odontopediatría , Ortodoncia y Prequirúrgica.</li>
+                        <li>Programa de LPH sin caries.</li>
+                        <li>Odontología general que incluye las áreas preventivas y profiliaxis, operatoria y elaboración de aparatos de laboratorio.</li>
                         </ul>                        
                     </div>
-
                 </div>
 
-                <div className='p-8 w-1/2'>
-                    <div className='bg-blue-600 p-8'>
-                        <h3 className="text-lg font-bold">Aprendizajes</h3>
-                        <ul className="list-disc pl-5">
-                        <li>Requisito 1</li>
-                        <li>Requisito 2</li>
-                        <li>Requisito 3</li>
+                <div className='p-8 w-1/2 '>
+                    <div className='bg-secondary p-2 rounded-3xl'>
+                        <h3 className="p-8 text-2xl font-bold">¿Qué voy a aprender?</h3>
+                        <ul className="list-disc pl-12 pb-8">
+                        <li>Trabajo multidisciplinario entre área dental y médica.</li>
+                        <li>Protocolos en quirófano para la atención de pacientes con LPH.</li>
+                        <li>Atención preventiva con pacientes de LPH.</li>
                         </ul>                        
                     </div>
                 </div>
@@ -73,7 +69,7 @@ const CorpusVolunteering = () => {
             
             <div className='flex flex-row'>
                 <div className = 'w-1/2 '>
-                    <div className='bg-blue-950 text-white flex flex-col mt-14 p-4 m-10 rounded-3xl'>
+                    <div className='bg-secondary text-white flex flex-col mt-14 p-4 m-10 rounded-3xl'>
                         <div className='p-8 text-2xl font-bold'>¿Qué voy a realizar?</div> 
                         <ul className="list-disc pl-12 pb-8">
                             <li>Actividades profesionales en tu área de trabajo una vez por semana.</li>
@@ -91,7 +87,7 @@ const CorpusVolunteering = () => {
                         <img src='images/Voluntariado2.png' alt='Imagen de la actividad'/>
                     </div>
 
-                    <div className='bg-blue-950 text-white flex flex-col p-4 m-10 mt-11 rounded-3xl'>
+                    <div className='bg-secondary text-white flex flex-col p-4 m-10 mt-11 rounded-3xl'>
                         <div className='p-8 text-2xl font-bold'>Características</div>
                         <ul className="list-disc pl-12 pb-8">
                             <li>Pasión por su trabajo.</li>
@@ -104,13 +100,6 @@ const CorpusVolunteering = () => {
             </div>
 
         </div>
-
-          {/* Footer */}
-        <footer>
-            <div className='bg-blue-500 p-4 text-white'>
-                <h1 className="text-2xl">Footer</h1>
-            </div>
-        </footer>
 
     </div>
     );
