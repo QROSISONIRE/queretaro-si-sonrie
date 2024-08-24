@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+}
+
+.team-nav-bar {
+    width: 100%;
+    min-height: 15vh;
+    background-color: #292929;
+    color: white;
+    text-align: center;
+    line-height: 15vh;
+}
+
+.team-introduction {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-introduction-div-design {
+    position: relative;
+    width: 100%;
+}
+
+.team-introduction-div-design h1{
+    font-size: 4vw;
+    color: #FF4141;
+    padding-left: 6%;
+    width: fit-content;
+    margin-bottom: 0;
+}
+
+.team-introduction-design-1 {
+    position: absolute;
+    left: 80%;
+    bottom: 30px;
+    width: 20%;
+    height: 50px;
+    z-index: -1;
+    background-color: #FF4141;
+    border-radius: 20px 0 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 3px 4px 3px;
+}
+
+.team-introduction-design-2 {
+    float: right;
+    width: 25%;
+    height: 50px;
+    z-index: 2;
+    background-color: #FFE135;
+    border-radius: 20px 0 0 20px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 3px 4px 3px;
+}
+
+.team-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5vh;
+}
+
+.team-flex-container div {
+    width: 20vw;
+    text-align: center;
+}
+
+.team-flex-container img {
+    width: 18vw;
+    border-radius: 100%;
+    border: #FFE135 solid 1vw;
+}
+
+.team-flex-container h2 {
+    font-size: 1.8vw;
+}
+
+.team-flex-container p {
+    font-size: 1.5vw;
+}
+
+.team-institutions {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10vh;
+}
+
+.team-institutions-div-design {
+    position: relative;
+    width: 100%;
+}
+
+.team-institutions-design-1 {
+    width: 15%;
+    height: 50px;
+    z-index: -1;
+    background-color: #FF4141;
+    border-radius: 0 20px 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 3px 4px 3px;
+}
+
+.team-institutions-design-2 {
+    position: absolute;
+    top: 30px;
+    width: 10%;
+    height: 50px;
+    z-index: 2;
+    background-color: #FFE135;
+    border-radius: 0 20px 20px 0;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 3px 4px 3px;
+}
+
+.team-institutions h1 {
+    font-size: 4.5vw;
+    text-align: center;
+}
+
+.team-institutions p {
+    font-size: 1.2vw;
+    text-align: center;
+}
+
+.team-institutions-flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    gap: 6%;
+    margin: 3vh 0;
+}
+
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
