@@ -29,7 +29,7 @@ const Navbar = () => {
       transition={{
         duration: 0.15, ease: 'easeInOut'
       }}
-      className={`flex bg-secondary p-5 text-white justify-between items-center fixed w-full`}>
+      className={`flex bg-secondary p-5 text-white justify-between items-center fixed w-full z-50`}>
       {/* Logo */}
       <Link href={'/'}>
         <img src='icons/logo.png' className='w-32'/>
