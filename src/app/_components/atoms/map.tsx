@@ -7,8 +7,7 @@ export default function Map() {
   const { isLoaded } = useLoadScript({
     googleMapsApiKey: process.env.NEXT_PUBLIC_MAPS_API_KEY!,
   });
-
-  const center = useMemo(() => ({ lat: 19.708618, lng: -98.45281 }), []);
+  const center = useMemo(() => ({ lat: 20.587005124228323, lng: -100.40740088066273 }), []);
 
   if (!isLoaded) return <div>Loading...</div>;
 
