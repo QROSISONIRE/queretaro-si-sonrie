@@ -1,4 +1,4 @@
-import { Decorations, Icon } from "./_components/atoms/Decorations";
+import { Decorations, Icon } from "./_components/Atoms/Decorations";
 import { servicios } from "./constants";
 
 import Link from "next/link";

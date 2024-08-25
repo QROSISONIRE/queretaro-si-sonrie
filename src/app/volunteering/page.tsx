@@ -1,24 +1,26 @@
 // classname = color / padding / tamaño / flex / flex-properties / el resto
+import { Decorations, Icon } from "../_components/Atoms/Decorations";
 
 const CorpusVolunteering = () => {
     return (
     <div className="flex flex-col min-h-screen">
 
           {/* Body */}
-        <div className="pt-20">
+        <div className="pt-12">
 
               {/* Sección de imagen y texto */}
-            <div className='py-16 flex flex-row'>
+            <div className='py-12 flex flex-row'>
                 <div className='w-1/2 flex items-center justify-center'> 
                     <img src='images/Voluntariado3.jpeg' className='w-80 h-auto rounded-3xl' alt='Imagen de la actividad'/>
                 </div>
 
                 <div className=' w-1/2 '>
+                    <Decorations color1='fourth' color2='third' className='sticky top-[60 vh] left-[60vh]'/>
                     <div className='p-8'>
                         <div> <h1 className="text-5xl font-bold"> Servicio Social </h1> </div>
                     </div>
 
-                    <div className='flex flex-col p-4 justify-center items-center'>
+                    <div className='flex flex-col p-4 justify-center items-center'> 
                         <p> En <strong>Querétaro Sí Sonríe</strong> el servicio social es una actividad de formación y servicio a la comunidad de fisura labio platina en la ciudad de Querétaro.
                         </p>
                         <br></br>
@@ -30,7 +32,6 @@ const CorpusVolunteering = () => {
 
               {/* Sección de dos bloques */}
             <div className='flex flex-row text-white'>
-
                 <div className='p-8 w-1/2 '>
                     <div className='bg-secondary p-2 rounded-3xl'>
                         <h3 className="p-8 text-2xl font-bold">¿Qué actividades voy a realizar?</h3>
@@ -50,15 +51,19 @@ const CorpusVolunteering = () => {
                         <ul className="list-disc pl-12 pb-8">
                         <li>Trabajo multidisciplinario entre área dental y médica.</li>
                         <li>Protocolos en quirófano para la atención de pacientes con LPH.</li>
-                        <li>Atención preventiva con pacientes de LPH.</li>
-                        </ul>                        
+                        <li>Atención preventiva con pacientes de LPH.</li>                  
+                        </ul>
                     </div>
                 </div>
+                <Decorations color1={"fourth"} color2={"fifth"} className={"absolute top-[170vh] -right-80"}/>
+                
             </div>
+            
 
               {/* Sección de requisitos y voluntariado */}
             <div className='p-10 flex flex-row justify-evenly'>
                 <h1 className='text-5xl font-bold'>Voluntariado</h1>
+                <Decorations color1={"fourth"} color2={"secondary"} color3={'fifth'} className={"-rotate-45 top-[280vh] -right-10"}/>
             </div>
             <div className='flex flex-col p-10 pl-20 justify-center items-center'>
                 <p>Para poder ser voluntario es necesario ser especialista en cualquiera de las áreas de trabajo, 
@@ -77,15 +82,16 @@ const CorpusVolunteering = () => {
                         </ul> 
                     </div> 
                     <div className='p-4 flex flex-col justify-evenly items-center mt-24'>
-                        <img src='images/Voluntariado.png' alt='Imagen de la actividad'/>
+                        <img src='images/Voluntariado.png' alt='Imagen de la actividad' className='rounded-3xl'/>
                     </div>
                         
                 </div>
 
                 <div className = 'p-10 w-1/2'>
                     <div className='p-4 flex flex-col justify-evenly items-center'>
-                        <img src='images/Voluntariado2.png' alt='Imagen de la actividad'/>
+                        <img src='images/Voluntariado2.png' alt='Imagen de la actividad' className='rounded-3xl'/>
                     </div>
+                    <Decorations color1={"fourth"} color2={"secondary"} className={"-rotate-45 top-[270vh] left-0"}/>
 
                     <div className='bg-secondary text-white flex flex-col p-4 m-10 mt-11 rounded-3xl'>
                         <div className='p-8 text-2xl font-bold'>Características</div>
