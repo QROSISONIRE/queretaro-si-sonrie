@@ -48,7 +48,7 @@ export default function Home() {
         
         <div className="mt-60 md:shrink-0 flex md:mb-32 md:-mt-52">
           <Decorations color1='third' color2='fourth' className='relative right-[30rem] md:right-[30rem] md:-top-5 lg:right-[30rem] lg:top-1 xl:right-[30rem] xl:top-20 h-fit -z-20'/>
-          <h1 className="text-4xl font-bold -ml-80 md:-mt-8 md:-ml-80 md:w-[40rem] lg:right-[30rem] lg:mb-14 xl:right-[30rem] xl:mt-32 block ">
+          <h1 className="text-4xl font-bold sm:-ml-80 md:-mt-8 md:-ml-80 md:w-[40rem] lg:right-[30rem] lg:mt-5 xl:right-[30rem] xl:mt-32 block ">
             El Instituto Queretano para la Atención de Enfermedades Congénitas (IQUEC) 
           </h1>
         </div>
@@ -60,10 +60,10 @@ export default function Home() {
             <img 
               src="/images/elipse1.png" alt="imagen" className="w-[95%] top-[2%] md:-mt-20 xl:-mt-24"
             />
-            <Decorations color1='third' color2='fourth' className='relative left-[65rem] -z-20 md:left-[35rem] md:mt-60 lg:mt-32 xl:-mt-24 xl:left-[65rem]'/>
+            <Decorations color1='third' color2='fourth' className='relative left-[65rem] -z-20 md:left-[35rem] md:mt-60 lg:mt-8 xl:-mt-24 xl:left-[65rem]'/>
         </div>
         <div className="sm:-mt-32 sm:ml-16 md:-mt-11 md:-ml-20 md:flex md:shrink-0 flex flex-col items-start justify-start lg:-mt-20">
-          <h1 className="text-4xl font-bold ml-5 md:ml-[30%] -mt-[3%] w-[100%]">
+          <h1 className="text-4xl font-bold ml-5 md:ml-[30%] -mt-[3%] w-[100%] xl:mt-8">
             Conócenos...
           </h1>
           <p className="text-2xl ml-5 md:ml-[15%] mt-[5%] w-[75%] overflow-wrap: break-word text-justify"> 
@@ -76,7 +76,7 @@ export default function Home() {
       </section>
 
       <section className="grid md:grid-cols-2 md:text-left min-h-screen flex-col items-start justify-start">
-        <div className=" md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start md:-mt-32">
+        <div className=" md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start md:-mt-32 xl:-mt-44">
           <h1 className="text-4xl font-bold ml-5 md:ml-[110%] -mt-[3%] w-[100%] z-50">
               Visión
             </h1>
@@ -88,12 +88,13 @@ export default function Home() {
               Deseamos seguir siendo una fundación económicamente autosustentable para poder trabajar
               con finanzas transparentes y no depender de donativos, los cuales pueden ser variables.
             </p>
-          <h1 className="text-4xl text-[#FF4141] font-bold ml-5 md:ml-[100%] mt-[7%] w-[100%] overflow-wrap: break-word text-center">
-            ¡Sigue sonriendo con nosotros!
+          <h1 className="text-4xl text-[#FF4141] font-bold ml-5 md:ml-[95%] mt-[7%] w-[100%] overflow-wrap: break-word text-center xl:mt-[3%] xl:ml-[95%]">
+            ¡Sigue sonriendo con <br></br>nosotros!
           </h1>
-          <div className="max-w-lg -mt-[58%] ml-20 border-blue-600 border-[10px] border-solid rounded-md md:-mt-[29rem]">
+          <div className="max-w-lg -mt-[58%] ml-20 border-blue-600 border-[14px] border-solid rounded-md md:-mt-[29rem] lg:-mt-[82%] xl:-mt-[60%]">
             <Carousel images={images} />
           </div>
+          <button className="rounded-md bg-[#FF4141] text-slate-200 text-lg w-28 h-8 shadow-xl hover:bg-red-500 xl:mt-20 xl:ml-[138%] lg:mt-[5%] lg:ml-[45%]">Donar</button>
         </div>
       </section>
 
