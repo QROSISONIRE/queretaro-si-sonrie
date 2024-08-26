@@ -45,9 +45,9 @@ export default function Home() {
           </div>
         </section>
         
-        <div className="md:shrink-0 flex mb-32">
+        <div className="md:shrink-0 flex mb-32 -mt-52">
           <Decorations color1='third' color2='fourth' className='relative right-[30rem] -z-20 -top-5 h-fit'/>
-          <h1 className="text-4xl font-bold md:-ml-96  w-[50rem] block ">
+          <h1 className="text-4xl font-bold md:-ml-80 w-[40rem] block ">
             El Instituto Queretano para la Atención de Enfermedades Congénitas (IQUEC) 
           </h1>
         </div>
@@ -60,8 +60,8 @@ export default function Home() {
               src="/images/elipse1.png" alt="imagen" className="w-[95%] top-[2%]"
             />
             <Decorations color1='third' color2='fourth' className='relative left-[65rem] -z-20 '/>
-         </div>
-         <div className="md:flex md:shrink-0 flex flex-col items-start justify-start">
+          </div>
+          <div className="md:flex md:shrink-0 flex flex-col items-start justify-start">
           <h1 className="text-4xl font-bold ml-5 md:ml-[30%] -mt-[3%] w-[100%]">
             Conócenos...
           </h1>
