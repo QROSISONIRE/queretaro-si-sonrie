@@ -1,10 +1,19 @@
 import { Decorations, Icon } from "./_components/atoms/Decorations";
+import {Carousel} from "./_components/atoms/Carousel";
 import { servicios } from "./constants";
 
 import Link from "next/link";
 
 export default function Home() {
 
+  const images = [
+    '/images/601.png',
+    '/images/602.png',
+    '/images/603.png',
+    '/images/604.png',
+    '/images/605.png'
+  ];
+  
   return (
     <main className="h-screen">
       {/* Inicio */}
@@ -63,6 +72,28 @@ export default function Home() {
             y dental es voluntario en el proyecto, donando sus honorarios médicos.
           </p>
          </div>
+      </section>
+
+      <section className="grid md:grid-cols-2 md:text-left min-h-screen flex-col items-start justify-start">
+        <div className=" md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start ">
+          <h1 className="text-4xl font-bold ml-5 md:ml-[110%] -mt-[3%] w-[100%] z-50">
+              Visión
+            </h1>
+            <p className="text-2xl ml-5 md:ml-[110%] mt-[5%] w-[75%] overflow-wrap: break-word text-justify"> 
+              Nuestra meta es alcanzar estándares de calidad en el protocolo de atención, así como
+              desarrollar proyectos de investigación para mejorar la atención multidisciplinaria.
+            </p>
+            <p className="text-2xl ml-5 md:ml-[110%] mt-[5%] w-[75%] overflow-wrap: break-word text-justify"> 
+              Deseamos seguir siendo una fundación económicamente autosustentable para poder trabajar
+              con finanzas transparentes y no depender de donativos, los cuales pueden ser variables.
+            </p>
+          <h1 className="text-4xl text-[#FF4141] font-bold ml-5 md:ml-[100%] mt-[7%] w-[100%] overflow-wrap: break-word text-center">
+            ¡Sigue sonriendo con nosotros!
+          </h1>
+          <div className="max-w-lg -mt-[40%] ml-3">
+            <Carousel images={images} />
+          </div>
+        </div>
       </section>
 
       {/* Organigrama */}
