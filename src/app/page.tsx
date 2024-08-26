@@ -76,25 +76,25 @@ export default function Home() {
       </section>
 
       <section className="grid md:grid-cols-2 md:text-left min-h-screen flex-col items-start justify-start">
-        <div className=" md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start md:-mt-32 xl:-mt-44">
-          <h1 className="text-4xl font-bold ml-5 md:ml-[110%] -mt-[3%] w-[100%] z-50">
+        <div className="sm:flex sm:shrink-0 sm:mt-10 md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start md:-mt-32 xl:-mt-44">
+          <h1 className="text-4xl font-bold sm:ml-20 sm:mt-[1%] w-[100%] z-50  md:ml-[110%]">
               Visión
             </h1>
-            <p className="text-2xl ml-5 md:ml-[110%] mt-[5%] w-[75%] overflow-wrap: break-word text-justify"> 
+            <p className="text-2xl sm:ml-20  md:ml-[110%] mt-[5%] w-[75%] overflow-wrap: break-word text-justify"> 
               Nuestra meta es alcanzar estándares de calidad en el protocolo de atención, así como
               desarrollar proyectos de investigación para mejorar la atención multidisciplinaria.
             </p>
-            <p className="text-2xl ml-5 md:ml-[110%] mt-[5%] w-[75%] overflow-wrap: break-word text-justify"> 
+            <p className="text-2xl sm:ml-20 md:ml-[110%] mt-[5%] w-[75%] overflow-wrap: break-word text-justify"> 
               Deseamos seguir siendo una fundación económicamente autosustentable para poder trabajar
               con finanzas transparentes y no depender de donativos, los cuales pueden ser variables.
             </p>
           <h1 className="text-4xl text-[#FF4141] font-bold ml-5 md:ml-[95%] mt-[7%] w-[100%] overflow-wrap: break-word text-center xl:mt-[3%] xl:ml-[95%]">
             ¡Sigue sonriendo con <br></br>nosotros!
           </h1>
-          <div className="max-w-lg -mt-[58%] ml-20 border-blue-600 border-[14px] border-solid rounded-md md:-mt-[29rem] lg:-mt-[82%] xl:-mt-[60%]">
+          <div className="max-w-lg sm:-mt-[10%] sm:ml-24 border-blue-600 border-[14px] border-solid rounded-md md:-mt-[29rem] lg:-mt-[82%] xl:-mt-[60%]">
             <Carousel images={images} />
           </div>
-          <button className="rounded-md bg-[#FF4141] text-slate-200 text-lg w-28 h-8 shadow-xl hover:bg-red-500 xl:mt-20 xl:ml-[138%] lg:mt-[5%] lg:ml-[45%]">Donar</button>
+          <button className="rounded-md bg-[#FF4141] text-slate-200 text-lg w-28 h-8 shadow-xl hover:bg-red-500 sm:ml-[40%] sm:mt-[5%] md:ml-[48%] lg:mt-[5%] lg:ml-[45%] xl:mt-20 xl:ml-[138%] ">Donar</button>
         </div>
       </section>
 
