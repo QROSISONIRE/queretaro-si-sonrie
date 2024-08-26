@@ -15,6 +15,13 @@ export default {
         fifth: '#00A2FF',
       }
     },
+    screens:{
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    }
   },
   plugins: [],
 } satisfies Config;

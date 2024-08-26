@@ -1,5 +1,5 @@
-import { Decorations, Icon } from "./_components/atoms/Decorations";
-import {Carousel} from "./_components/atoms/Carousel";
+import { Decorations, Icon } from "./_components/Atoms/Decorations";
+import {Carousel} from "./_components/Atoms/Carousel";
 import { servicios } from "./constants";
 
 import Link from "next/link";
@@ -23,7 +23,7 @@ export default function Home() {
             src="/images/Collage.png" alt="imagen" 
             />
         </div>
-          <div className="md:flex md:shrink-0 flex flex-col items-start justify-start p-10 mt-20 ">
+          <div className="-mt-20 md:mt-12 md:flex md:shrink-0 flex flex-col items-start justify-start p-10  ">
             <img
               src="/images/mainTitle.png"
               />
@@ -40,14 +40,15 @@ export default function Home() {
                   className="w-8 h-8"
                 />
               </Link>
-              <Decorations color1='fifth' color2='third' className='absolute top-[23rem] left-[65rem] -z-20'/>
+              <Decorations color1='fifth' color2='third' className='hidden md:block lg:block xl:block md:left-[40rem] lg:left-[50rem] xl:top-[26rem] xl:left-[65rem] -z-20 '/>
+              <Decorations color1='fifth' color2='third' className='absolute top-[38rem] left-[20rem] lg:hidden md:hidden xl:hidden'/>
               </div>
           </div>
         </section>
         
-        <div className="md:shrink-0 flex mb-32 -mt-52">
-          <Decorations color1='third' color2='fourth' className='relative right-[30rem] -z-20 -top-5 h-fit'/>
-          <h1 className="text-4xl font-bold md:-ml-80 w-[40rem] block ">
+        <div className="mt-60 md:shrink-0 flex md:mb-32 md:-mt-52">
+          <Decorations color1='third' color2='fourth' className='relative right-[30rem] md:right-[30rem] md:-top-5 lg:right-[30rem] lg:top-1 xl:right-[30rem] xl:top-20 h-fit -z-20'/>
+          <h1 className="text-4xl font-bold -ml-80 md:-mt-8 md:-ml-80 md:w-[40rem] lg:right-[30rem] lg:mb-14 xl:right-[30rem] xl:mt-32 block ">
             El Instituto Queretano para la Atención de Enfermedades Congénitas (IQUEC) 
           </h1>
         </div>
@@ -57,11 +58,11 @@ export default function Home() {
       <section className="grid md:grid-cols-2 md:text-left min-h-screen flex-col items-start justify-start"> 
         <div className="md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start ">
             <img 
-              src="/images/elipse1.png" alt="imagen" className="w-[95%] top-[2%]"
+              src="/images/elipse1.png" alt="imagen" className="w-[95%] top-[2%] md:-mt-20 xl:-mt-24"
             />
-            <Decorations color1='third' color2='fourth' className='relative left-[65rem] -z-20 '/>
-          </div>
-          <div className="md:flex md:shrink-0 flex flex-col items-start justify-start">
+            <Decorations color1='third' color2='fourth' className='relative left-[65rem] -z-20 md:left-[35rem] md:mt-60 lg:mt-32 xl:-mt-24 xl:left-[65rem]'/>
+        </div>
+        <div className="sm:-mt-32 sm:ml-16 md:-mt-11 md:-ml-20 md:flex md:shrink-0 flex flex-col items-start justify-start lg:-mt-20">
           <h1 className="text-4xl font-bold ml-5 md:ml-[30%] -mt-[3%] w-[100%]">
             Conócenos...
           </h1>
@@ -71,11 +72,11 @@ export default function Home() {
             a cabo por especialistas calificados en el protocolo de atención. Para ello, todo nuestro personal médico 
             y dental es voluntario en el proyecto, donando sus honorarios médicos.
           </p>
-         </div>
+        </div>
       </section>
 
       <section className="grid md:grid-cols-2 md:text-left min-h-screen flex-col items-start justify-start">
-        <div className=" md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start ">
+        <div className=" md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start md:-mt-32">
           <h1 className="text-4xl font-bold ml-5 md:ml-[110%] -mt-[3%] w-[100%] z-50">
               Visión
             </h1>
@@ -90,7 +91,7 @@ export default function Home() {
           <h1 className="text-4xl text-[#FF4141] font-bold ml-5 md:ml-[100%] mt-[7%] w-[100%] overflow-wrap: break-word text-center">
             ¡Sigue sonriendo con nosotros!
           </h1>
-          <div className="max-w-lg -mt-[40%] ml-3">
+          <div className="max-w-lg -mt-[58%] ml-20 border-blue-600 border-[10px] border-solid rounded-md md:-mt-[29rem]">
             <Carousel images={images} />
           </div>
         </div>
