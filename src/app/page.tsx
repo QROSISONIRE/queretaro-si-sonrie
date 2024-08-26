@@ -15,7 +15,7 @@ export default function Home() {
   ];
   
   return (
-    <main className="h-screen">
+    <main className="h-fit pb-32">
       {/* Inicio */}
       <section className="grid md:grid-cols-2 md:text-left h-screen flex-col items-start justify-start "> 
         <div className="md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start">

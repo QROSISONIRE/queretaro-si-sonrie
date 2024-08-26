@@ -35,16 +35,18 @@ const Navbar = () => {
         <Link href={'/'}>
           <img src='icons/logo.png' className='w-32'/>
         </Link>
-        <nav className='flex gap-20'>
-          {navbar.map((link) => (
-            <Link href={link.href} className='hover:bg-black bg-opacity-10 rounded-md px-5 p-2' key={link.href}>
-              {link.name}
-            </Link>
-          ))}
-        </nav>
-        <Link className='w-32 drop-shadow-md bg-third rounded-full text-center hover:bg-[rgb(255,40,40)] py-1' href={'/donar'}>
-          Donar
-        </Link>
+        <div className='flex h-full gap-5'>
+          <nav className='flex gap-10'>
+            {navbar.map((link) => (
+              <Link href={link.href} className='hover:bg-black bg-opacity-10 rounded-md px-5 p-2' key={link.href}>
+                {link.name}
+              </Link>
+            ))}
+          </nav>
+          <Link className='w-32 drop-shadow-md bg-third rounded-full text-center hover:bg-[rgb(255,40,40)] py-2 h-full items-center' href={'/donar'}>
+            Donar
+          </Link>
+        </div>
       </motion.nav>
     </div>
   )
