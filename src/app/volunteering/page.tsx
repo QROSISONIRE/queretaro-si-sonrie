@@ -10,8 +10,11 @@ const CorpusVolunteering = () => {
 
               {/* Sección de imagen y texto */}
             <div className='py-12 flex flex-row'>
-                <div className='w-1/2 flex items-center justify-center'> 
-                    <img src='images/Voluntariado3.jpeg' className='w-80 h-auto rounded-3xl' alt='Imagen de la actividad'/>
+
+                <div className='w-1/2 flex relative items-center justify-center'> 
+                    <img src='images/wave.png' className='w-full -ml-20 -mt-48 object-cover' alt=''/>
+
+                    <img src='images/Voluntariado3.jpeg' className='absolute w-80 h-auto rounded-3xl' alt='Imagen de la actividad'/>
                 </div>
 
                 <div className=' w-1/2 '>
@@ -46,7 +49,7 @@ const CorpusVolunteering = () => {
                 </div>
 
                 <div className='p-8 w-1/2 '>
-                    <div className='bg-secondary p-2 rounded-3xl'>
+                    <div className='bg-secondary p-2 pb-20 rounded-3xl'>
                         <h3 className="p-8 text-2xl font-bold">¿Qué voy a aprender?</h3>
                         <ul className="list-disc pl-12 pb-8">
                         <li>Trabajo multidisciplinario entre área dental y médica.</li>
@@ -55,7 +58,7 @@ const CorpusVolunteering = () => {
                         </ul>
                     </div>
                 </div>
-                <Decorations color1={"fourth"} color2={"fifth"} className={"absolute top-[170vh] -right-80"}/>
+                <Decorations color1={"fourth"} color2={"fifth"} className={"absolute top-[120vh] -right-80"}/>
                 
             </div>
             
@@ -63,7 +66,7 @@ const CorpusVolunteering = () => {
               {/* Sección de requisitos y voluntariado */}
             <div className='p-10 flex flex-row justify-evenly'>
                 <h1 className='text-5xl font-bold'>Voluntariado</h1>
-                <Decorations color1={"fourth"} color2={"secondary"} color3={'fifth'} className={"-rotate-45 top-[280vh] -right-10"}/>
+                <Decorations color1={"fourth"} color2={"secondary"} color3={'fifth'} className={"-rotate-45 top-[220vh] -right-10"}/>
             </div>
             <div className='flex flex-col p-10 pl-20 justify-center items-center'>
                 <p>Para poder ser voluntario es necesario ser especialista en cualquiera de las áreas de trabajo, 
@@ -91,7 +94,7 @@ const CorpusVolunteering = () => {
                     <div className='p-4 flex flex-col justify-evenly items-center'>
                         <img src='images/Voluntariado2.png' alt='Imagen de la actividad' className='rounded-3xl'/>
                     </div>
-                    <Decorations color1={"fourth"} color2={"secondary"} className={"-rotate-45 top-[270vh] left-0"}/>
+                    <Decorations color1={"fourth"} color2={"secondary"} className={"-rotate-45 top-[230vh] left-0"}/>
 
                     <div className='bg-secondary text-white flex flex-col p-4 m-10 mt-11 rounded-3xl'>
                         <div className='p-8 text-2xl font-bold'>Características</div>
