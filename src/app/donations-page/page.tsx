@@ -17,16 +17,16 @@ export default async function Home() {
     {/*<main className="relative flex min-h-screen flex-col items-center justify-center bg-gray text-black">*/}
         
         {/*Space for navbar*/}
-        <section className="h-20 invisible"></section>
+        <section className="h-10 invisible"></section>
 
         {/*<section className="h-16 invisible"></section>*/}
 
-        <div className="grid lg:grid-cols-2 grid-rows-[200px,760px,400px,100px] xl:grid-rows-[20px,1000px,100px] mx-36">
-          <section className="row-start-2 mt-32 lg:mt-16 ml-0 lg:-ml-10 m-auto">
+        <div className="grid lg:grid-cols-2 grid-rows-[10px,550px,500px,100px] lg:grid-rows-[10px,650px,270px] mx-36">
+          <section className="row-start-2 mt-32 lg:mt-16 ml-0 lg:-ml-10">
             <img src="images/donations/team_photo_donations_cropped.jpeg"
-            className="border-[2rem] border-blue-700 rounded-[1.7rem] w-auto mx-3"/>
+            className="border-[2rem] border-blue-700 rounded-[1.7rem] w-auto m-auto max-h-[500px] lg:max-h-[650px]"/>
           </section>
-          <section className="lg:col-start-2 row-start-3 lg:row-start-2 mt-28 lg:mt-14 mx-8 lg:mx-0 lg:ml-16 p-10 flex flex-col items-center">
+          <section className="lg:col-start-2 row-start-3 lg:row-start-2 mt-28 lg:mt-14 mx-8 lg:mx-0 lg:ml-16 p-10 max-w-[30rem] lg:max-w-[40rem] flex flex-col items-center">
             <div className="m-auto">
               <h1 className="font-extrabold text-5xl text-center">
                 ¡Muchas gracias!
@@ -35,8 +35,8 @@ export default async function Home() {
               <br></br>
               <div>
                 <p className="font-bold text-center text-xl m-auto">
-                  Tu donativo nos servirá para ayudar a niños de todo Querétaro,
-                  puedes realizar tu donativo al siguiente número de cuenta:
+                  Tu donativo nos servirá para ayudar a niños de todo Querétaro.
+                  Dona al siguiente número de cuenta:
                 </p>
               </div>
               <br></br>
@@ -63,7 +63,7 @@ export default async function Home() {
         <div className="h-16 w-[45rem] bg-fifth rounded-full absolute -left-36 z-10 top-[110vh]"></div>
         <div className="h-16 w-[45rem] bg-fourth rounded-full absolute -left-36 z-10 top-[120vh]"></div>
         */}
-        <Decorations color1={"third"} color2={"fifth"} color3="fourth" className={"top-[68rem] left-[30rem] z-10"}/>
+        <Decorations color1={"third"} color2={"fifth"} color3="fourth" className={"top-[50rem] left-[30rem] z-10"}/>
 
     </main>
   );
