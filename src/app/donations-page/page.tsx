@@ -4,6 +4,7 @@ import { LatestPost } from "~/app/_components/post";
 import { getServerAuthSession } from "~/server/auth";
 import { api, HydrateClient } from "~/trpc/server";
 import { Decorations, Icon } from "~/app/_components/Atoms/Decorations";
+import CopyToClipboard from "~/app/_components/Atoms/copyToClipboard";
 
 export default async function Home() {
   const hello = await api.post.hello({ text: "from tRPC" });
@@ -42,10 +43,7 @@ export default async function Home() {
               <br></br>
               <br></br>
               <div className="flex flex-col align-middle">
-                <button className="px-8 py-4 text-2xl font-bold rounded-full border border-gray-600 hover:text-white hover:bg-gray-500 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-gray-700 focus:ring-offset-2">
-                  {/* falta agregar que copie el numero cuando se haga clic en el boton */ }
-                  2345676543234543
-                </button>
+                <CopyToClipboard text="2345676543234543" />
               </div>
             </div>
           </section>
