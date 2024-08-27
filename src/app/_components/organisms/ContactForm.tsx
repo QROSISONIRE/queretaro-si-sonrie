@@ -28,14 +28,44 @@ const ContactForm: React.FC = () => {
     setMessage(e.target.value);
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    // Manejo del envío del formulario
-    console.log("Name:", name);
-    console.log("Password:", lastName);
-    console.log("Email:", email);
-    console.log("Message:", message);
-  };
+
+    // Verificar si los campos están vacíos
+    if (!name || !email || !message) {
+      alert("Tu formulario está vacío");
+      return;
+    }
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: "c3fd8409-d577-4c06-ba6e-5710229a86f6",
+          name: name,
+          email: email,
+          message: message,
+        }),
+      });
+
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+      const result = await response.json();
+
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+      if (result.success) {
+        alert("Se ha enviado tu formulario exitosamente!");
+      } else {
+        alert("Algo ha ocurrido, no se pudo enviar tu formulario!");
+      }
+    } catch (error) {
+      console.error("Error al enviar el formulario:", error);
+      alert("Ocurrió un error al intentar enviar el formulario.");
+    }
+  }
 
   return (
     <div className="w-full max-w-md">
