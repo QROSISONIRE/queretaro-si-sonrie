@@ -15,7 +15,7 @@ const Team = () => {
             <div className="flex justify-center gap-[7.1%] pt-[5vh] w-full">
               <div className="w-[22.6vw] text-center">
                 <img 
-                  src="images/team-img-1.jpg" 
+                  src="images/team-img-1.png" 
                   alt="imagen del especialista, Juan Martinez" 
                   className="w-[22.6vw] rounded-full border-[0.8vw] border-fourth"
                 />
@@ -29,7 +29,7 @@ const Team = () => {
               
               <div className="w-[22.6vw] text-center">
                 <img 
-                  src="images/team-img-2.jpg" 
+                  src="images/team-img-2.png" 
                   alt="imagen de Dr. Estrada Vargas" 
                   className="w-[22.6vw] rounded-full border-[0.8vw] border-fourth"
                 />
@@ -42,7 +42,7 @@ const Team = () => {
               
               <div className="w-[22.6vw] text-center">
                 <img 
-                  src="images/team-img-3.jpg" 
+                  src="images/team-img-3.png" 
                   alt="imagen de Dra. Maria Castillo" 
                   className="w-[22.6vw] rounded-full border-[0.8vw] border-fourth"
                 />
