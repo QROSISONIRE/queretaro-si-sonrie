@@ -4,7 +4,7 @@ import { LatestPost } from "~/app/_components/post";
 import { getServerAuthSession } from "~/server/auth";
 import { api, HydrateClient } from "~/trpc/server";
 import { Decorations, Icon } from "~/app/_components/Atoms/Decorations";
-import CopyToClipboard from "~/app/_components/Atoms/copyToClipboard";
+import CopyToClipboard from "~/app/_components/Atoms/CopyToClipboard";
 
 export default async function Home() {
   const hello = await api.post.hello({ text: "from tRPC" });
@@ -22,7 +22,7 @@ export default async function Home() {
 
         {/*<section className="h-16 invisible"></section>*/}
 
-        <div className="grid lg:grid-cols-2 grid-rows-[10px,550px,500px,100px] lg:grid-rows-[10px,650px,270px] mx-36">
+        <div className="grid lg:grid-cols-2 grid-rows-[10px,550px,500px,350px] lg:grid-rows-[10px,650px,270px] mx-36">
           <section className="row-start-2 mt-32 lg:mt-16 ml-0 lg:-ml-10">
             <img src="images/donations/team_photo_donations_cropped.jpeg"
             className="border-[2rem] border-blue-700 rounded-[1.7rem] w-auto m-auto max-h-[500px] lg:max-h-[650px]"/>
@@ -61,7 +61,7 @@ export default async function Home() {
         <div className="h-16 w-[45rem] bg-fifth rounded-full absolute -left-36 z-10 top-[110vh]"></div>
         <div className="h-16 w-[45rem] bg-fourth rounded-full absolute -left-36 z-10 top-[120vh]"></div>
         */}
-        <Decorations color1={"third"} color2={"fifth"} color3="fourth" className={"top-[50rem] left-[30rem] z-10"}/>
+        <Decorations color1={"third"} color2={"fifth"} color3="fourth" className={"top-[80rem] lg:top-[50rem] -left-[2rem] md:left-[0rem] lg:left-[30rem] z-10"}/>
 
     </main>
   );
