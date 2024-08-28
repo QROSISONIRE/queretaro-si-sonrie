@@ -4,11 +4,12 @@ export const navbar = [
     href: '/nosotros'
   },
   {
-    name: 'Contacto',
-    href: '/contact-page'
-  },
-  {
     name: 'Voluntariado',
     href: '/volunteering'
   },
+  {
+    name: 'Contacto',
+    href: '/contact-page'
+  },
+  
 ]
