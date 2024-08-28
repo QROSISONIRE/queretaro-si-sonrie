@@ -1,10 +1,6 @@
 const Team = () => {
     return (
-        <div className="min-h-screen bg-white text-gray-900">
-        <header className="w-full min-h-[12vh] bg-gray-800 text-white flex items-center justify-center">
-          <div>HEADER</div>
-        </header>
-        
+      <div className="min-h-screen bg-white text-gray-900">
         <main className="flex flex-col">
           {/* Team Introduction Section */}
           <section className="flex flex-col items-center">
