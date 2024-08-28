@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Link from "next/link";
 import { LatestPost } from "~/app/_components/post";
 import { getServerAuthSession } from "~/server/auth";
@@ -19,3 +20,15 @@ export default async function Home() {
       </main>
   );
 }
+=======
+export default function Home() {
+
+  return (
+    
+    <div className="h-[100rem] bg-red-50">
+      Inicio
+    </div>
+    
+  );
+}
+>>>>>>> main
