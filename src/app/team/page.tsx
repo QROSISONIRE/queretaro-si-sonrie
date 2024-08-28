@@ -24,7 +24,7 @@ const Team = () => {
                   className="w-[22.6vw] rounded-full border-[0.8vw] border-fourth"
                 />
                 <h2 className="text-[1.5vw] font-black tracking-tighter mt-[10%] mb-[4%]">Juan Martinez</h2>
-                <p className="text-[1.5vw] leading-6">
+                <p className="text-[1.5vw] leading-7">
                   Especialista en negocios <br/>
                   internacionales y <br/>
                   relaciones públicas
@@ -74,17 +74,17 @@ const Team = () => {
             
             <div className="flex justify-center items-center gap-[12%] my-[3%]">
               <img 
-                src="images/team-img-institution-1.jpg" 
+                src="images/team-img-institution-1.png" 
                 alt="Logo de SmileTrain" 
                 className="w-[15vw]"
               />
               <img 
-                src="images/team-img-institution-2.jpg" 
+                src="images/team-img-institution-2.png" 
                 alt="Logo de Quirófanos del Valle" 
                 className="w-[22vw]"
               />
               <img 
-                src="images/team-img-institution-3.jpg" 
+                src="images/team-img-institution-3.png" 
                 alt="Logo de Rxmind Gabinete Radiológico" 
                 className="w-[22vw]"
               />
@@ -92,17 +92,17 @@ const Team = () => {
             
             <div className="flex justify-center items-center gap-[8%] my-[1%]">
               <img 
-                src="images/team-img-institution-4.jpg" 
+                src="images/team-img-institution-4.png" 
                 alt="Logo de Laboratorio de Análisis Clinicos Danthe" 
                 className="w-[13vw]"
               />
               <img 
-                src="images/team-img-institution-5.jpg" 
+                src="images/team-img-institution-5.png" 
                 alt="Logo de UVM" 
                 className="w-[30vw]"
               />
               <img 
-                src="images/team-img-institution-6.jpg" 
+                src="images/team-img-institution-6.png" 
                 alt="Logo de Orthodontics Bajio" 
                 className="w-[20vw]"
               />
@@ -110,12 +110,12 @@ const Team = () => {
             
             <div className="flex justify-center items-center gap-[10%] my-[3%]">
               <img 
-                src="images/team-img-institution-7.jpg" 
+                src="images/team-img-institution-7.png" 
                 alt="Logo de More Brands Studio" 
                 className="w-[25vw]"
               />
               <img 
-                src="images/team-img-institution-8.jpg" 
+                src="images/team-img-institution-8.png" 
                 alt="Logo de RoberToon Ilustrador" 
                 className="w-[25vw]"
               />
