@@ -3,9 +3,10 @@ const Team = () => {
       <div className="min-h-screen bg-white text-gray-900">
         <main className="flex flex-col">
           {/* Team Introduction Section */}
-          <section className="flex flex-col items-center">
+          <section className="flex flex-col items-center mt-20">
             <div className="flex w-full">
-                <h1 className="text-[3.4vw] w-[70%] text-third font-bold mt-[3%] ml-[5.5%] mb-0">¡Te presentamos a nuestro equipo!</h1>
+            <h1 className="text-[4vw] sm:text-3xl lg:text-5xl w-[70%] text-red-600 font-bold mt-[3%] ml-[5.5%] mb-0"> ¡Te presentamos a nuestro equipo! </h1>
+
                 <div className="relative w-[30%]">
                     <div className="absolute left-[30%] w-[70%] top-[28%] h-[33%] bg-third rounded-l-3xl shadow-dsgn"></div>
                     <div className="absolute left-[10%] w-[90%] top-[50%] h-[33%] bg-fourth rounded-l-3xl shadow-dsgn"></div>
