@@ -68,15 +68,15 @@ const ContactForm: React.FC = () => {
   }
 
   return (
-    <div className="w-full max-w-md">
+    <div className="mx-auto w-full max-w-md">
       <form
-        className="mb-4 rounded bg-white px-8 pb-8 pt-6"
+        className="mb-4 rounded-lg bg-white px-8 pb-8 pt-6 shadow-md"
         onSubmit={handleSubmit}
       >
         <FormHeader
           title="Contacto"
           subtitle="Ponte en contacto con nuestros especialistas"
-          className="mb-4"
+          className="mb-4 text-center"
         />
         <FormLabel
           label="Nombre"
