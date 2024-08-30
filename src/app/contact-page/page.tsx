@@ -6,7 +6,7 @@ import ContactForm from "../_components/organisms/ContactForm";
 
 const inter = Inter({
   subsets: ["latin"],
-  weight: ["400", "700"], // 400 es regular y 700 es bold
+  weight: ["400", "700"],
   style: "normal",
 });
 
@@ -22,7 +22,6 @@ export default function ContactPage() {
           height={661}
           className="object-cover"
         />
-        {/* Adjusted width, height, top, and transform for smaller size */}
         <div className="relative left-1/2 top-[80%] flex h-[40%] w-[80%] -translate-x-1/2 -translate-y-1/2 transform flex-col items-center justify-center rounded-2xl border border-white/20 bg-white bg-opacity-30 p-4 text-center text-black shadow-lg backdrop-blur-lg sm:h-[35%] sm:w-[70%] md:h-[30%] md:w-[60%] lg:h-[25%] lg:w-[50%] xl:h-[20%] xl:w-[40%]">
           <h1 className="mb-3 text-2xl font-bold sm:text-3xl md:text-4xl lg:text-5xl">
             ¡Comunícate!
@@ -34,12 +33,12 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <section className="flex w-full flex-col items-center justify-center space-y-5 md:flex-row md:space-y-0">
-        <div className="w-full max-w-[90%] flex-1 p-5 sm:max-w-[70%] md:max-w-[50%]">
-          <Map />
+      <section className="flex w-full flex-col items-center justify-center space-y-5 md:flex-row md:space-y-0 md:space-x-5">
+        <div className="w-full max-w-[90%] flex-1 p-5 sm:max-w-[70%] md:max-w-[50%] flex items-center justify-center">
+            <Map />
         </div>
         <div className="w-full max-w-[90%] flex-1 px-5 sm:max-w-[70%] md:max-w-[45%] md:px-10 lg:px-20">
-          <ContactForm />
+            <ContactForm />
         </div>
       </section>
     </HydrateClient>
