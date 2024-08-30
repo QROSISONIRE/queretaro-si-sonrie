@@ -75,7 +75,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="grid md:grid-cols-2 md:text-left min-h-screen flex-col items-start justify-start">
+      <section className="grid md:grid-cols-2 md:text-left min-h-screen flex-col items-start justify-start ">
         <div className="sm:flex sm:shrink-0 sm:mt-10 md:flex md:shrink-0 min-h-screen flex flex-col items-start justify-start md:-mt-32 xl:-mt-44">
           <h1 className="text-4xl font-bold sm:ml-20 sm:mt-[1%] w-[100%] z-50  md:ml-[110%]">
               Visión
@@ -101,14 +101,13 @@ export default function Home() {
       </section>
 
       {/* Organigrama */}
-      <div className="flex flex-col items-center p-5 h-screen text-bold text-6xl poppins">
-        <div className="flex h-fit items-center">
-          <img src={'icons/simpleLogo.png'} className="size-20"/>Organigrama
+      <div className="flex flex-col items-center p-5 h-screen text-bold text-6xl poppins  -mt-48">
+        <div className="flex h-full items-center">
+          <img src={'images/organigrama.png'} className="w-full h-full"/>
         </div>
-        <hr className="w-11/12 mt-5 border-2 border-black"/>
       </div>
     {/* Servicios */}
-        {/* <Decorations color1='fifth' color2='third' className='top-[50rem] -ml-[20rem] -z-20' rotation="-45" /> */}
+        <Decorations color1='fifth' color2='third' color3='fourth' className='top-[480vh] ml-[10rem] -z-20' rotation="-45" />
       <section className="h-screen p-10 w-full">
         <h1 className="text-6xl poppins text-center mb-10">Servicios</h1>
 
