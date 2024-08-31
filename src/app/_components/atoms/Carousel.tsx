@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'react-feather';
 
 interface CarouselProps {
-  images: any[]; // Usa 'any[]' si quieres que 'images' pueda ser un array de cualquier tipo
+  images: string[]; 
 }
 
 export const Carousel: React.FC<CarouselProps> = ({ images }) => {
