@@ -1,5 +1,5 @@
 import { Decorations, Icon } from "./_components/atoms/Decorations";
-import { Carousel } from "./_components/atoms/Carousel";
+import { Carousel } from "./_components/atoms/Carousel"
 import { servicios } from "./constants";
 
 import Link from "next/link";
