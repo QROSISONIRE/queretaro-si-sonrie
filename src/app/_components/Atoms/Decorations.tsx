@@ -10,7 +10,7 @@ interface DecorationProps {
 }
 
 interface IconProps {
-  img: object,
+  img: string,
 }
 
 export const Decorations: FC<DecorationProps> = ({color1, color2, rotation, color3, className}) => {
@@ -33,10 +33,10 @@ export const Decorations: FC<DecorationProps> = ({color1, color2, rotation, colo
   )
 }
 
-export const Icon = () => {
+export const Icon: FC<IconProps> = ({img}) => {
   return (
-    <div className='w-32 h-32 rounded-full border-dashed border-black border-4'>
-      <img/>
+    <div className='w-32 h-32 rounded-full border-dashed border-black border-4 flex items-center justify-center'>
+      <img src={'images/'+img} className='size-20'/>
     </div>
   )
 }

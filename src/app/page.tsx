@@ -120,7 +120,7 @@ export default function Home() {
               {servicios.map((servicio, i) => (
                 <div key={i}>
                   <div className="flex items-center gap-5">
-                    <Icon/>
+                    <Icon img={servicio.img}/>
                     <span>
                       <h2 className="poppins">{servicio.titulo}</h2>
                       <span className="inter block w-96">{servicio.descripción}</span>
