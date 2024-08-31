@@ -9,7 +9,7 @@ export const navbar = [
   },
   {
     name: 'Contacto',
-    href: '/contacto'
+    href: '/contact-page'
   },
   
 ]
