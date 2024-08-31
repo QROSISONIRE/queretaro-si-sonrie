@@ -4,7 +4,7 @@ import { GeistSans } from "geist/font/sans";
 import { type Metadata } from "next";
 
 import { TRPCReactProvider } from "~/trpc/react";
-import Navbar from "./_components/Molecules/Navbar";
+import Navbar from "./_components/molecules/Navbar";
 import Footer from "./_components/organisms/footer";
 
 export const metadata: Metadata = {
