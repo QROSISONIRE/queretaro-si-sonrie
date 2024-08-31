@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { navbar } from '../../constants'
 import { useState } from 'react'
 import { useScroll, useMotionValueEvent, motion} from 'framer'
+import Donar from '../atoms/Donar'
 
 
 const Navbar = () => {
@@ -42,9 +43,7 @@ const Navbar = () => {
               </Link>
             ))}
           </nav>
-          <Link className='w-32 drop-shadow-md bg-third rounded-full text-center hover:bg-[rgb(255,40,40)] py-2 h-full items-center' href={'/donations-page'}>
-            Donar
-          </Link>
+          <Donar />
         </div>
       </motion.nav>
     </div>
