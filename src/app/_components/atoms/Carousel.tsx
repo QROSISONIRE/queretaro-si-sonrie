@@ -2,7 +2,11 @@
 import { useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'react-feather';
 
-export const Carousel = ({ images }) => {
+interface CarouselProps {
+  images: string[]; 
+}
+
+export const Carousel: React.FC<CarouselProps> = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
@@ -28,14 +32,12 @@ export const Carousel = ({ images }) => {
         <div className='flex items-center justify-center gap-2'>
             {images.map((_, i) => (
             <div 
+                key={i}
                 className={`transition-all w-3 h-3 bg-white rounded-full ${currentIndex === i ? "p-2" : "bg-opacity-50"}`}
             />
             ))}
         </div>
-        </div>
       </div>
+    </div>
   );
 };
-
-
-
