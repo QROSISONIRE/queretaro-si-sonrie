@@ -1,57 +1,58 @@
 export const navbar = [
   {
     name: 'Nosotros',
-    href: '/nosotros'
+    href: '/team'
+  },
+  {
+    name: 'Voluntariado',
+    href: '/volunteering'
   },
   {
     name: 'Contacto',
     href: '/contacto'
   },
-  {
-    name: 'Voluntariado',
-    href: '/volunteering'
-  }
+  
 ]
 
 export const servicios = [
   {
     titulo: 'Odontopediatria',
     descripción: 'Actividades preventivas y correctivas de los dientes de deciduos',
-    //img
+    img: 'odoPed.png'
   },
   {
     titulo: 'Odontología',
     descripción: 'Odontología infantil 1x4 a las 9 - 13 años.\nCirugía ortognática',
-    //img
+    img: 'odo.png'
   },
   {
     titulo: 'Ortopedia pre-quirúrgica',
     descripción: 'Conformadores nasales',
-    //img
+    img: 'ortoPre.png'
   },
   {
     titulo: 'Ortopedia',
     descripción: 'Post nam\nHas y hyrax controles verticales y transversales.',
-    //img
+    img: 'orto.png'
   },
   {
     titulo: 'Terapia de Lenguaje',
     descripción: '',
-    //img
+    img: 'tl.png'
   },
   {
     titulo: 'Cirugía plástica',
     descripción: 'Queilo, palato, velo, nasorino',
-    //img
+    img: 'ciru.png'
   },
   {
     titulo: 'Maxilofacial',
     descripción: 'Terceros molares, cirugía ortognática',
-    //img
+    img: 'maxi.png'
   },
   {
     titulo: 'Preventiva',
     descripción: 'Actividades preventivas, caries, control de higiene',
-    //img
+    img: 'prev.png'
   },
 ]
