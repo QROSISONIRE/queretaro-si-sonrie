@@ -1,7 +1,7 @@
 export const navbar = [
   {
     name: 'Nosotros',
-    href: '/nosotros'
+    href: '/team'
   },
   {
     name: 'Voluntariado',
